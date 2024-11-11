@@ -1,19 +1,28 @@
 [
     {
-      "name": "1.png",
-      "size": 1024,
-      "created": "2024-11-10T12:00:00Z",
-      "modified": "2024-11-10T12:30:00Z",
-      "type": "image/png",
-      "description": "An example description for image 1"
+      "name": "Costume",
+      "preco": "1540",
+      "type": "image/jpg",
     },
     {
-      "name": "2.png",
-      "size": 2048,
-      "created": "2024-11-10T13:00:00Z",
-      "modified": "2024-11-10T13:30:00Z",
-      "type": "image/png",
-      "description": "An example description for image 2"
+      "name": "2.jpg",
+      "preco": "2800",
+      "type": "image/jpg",
+    },
+    {
+      "name": "3.jpg",
+      "preco": "290",
+      "type": "image/jpg",
+    },
+    {
+      "name": "4.jpg",
+      "preco": "250",
+      "type": "image/jpg",
+    },
+    {
+      "name": "5.jpg",
+      "preco": "60",
+      "type": "image/jpg",
     }
   ]
   
