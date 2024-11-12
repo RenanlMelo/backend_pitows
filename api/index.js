@@ -1,18 +1,20 @@
-const path = require("path");
 const express = require("express");
 const cors = require("cors");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://127.0.0.1:5500",
+  })
+);
+
 app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Server is running!");
 });
-
-app.use("/images", express.static(path.join(__dirname, "../images")));
 
 app.get("/api/image-metadata", (req, res) => {
   const imageMetadata = [
@@ -20,14 +22,14 @@ app.get("/api/image-metadata", (req, res) => {
       name: "Costume",
       preco: "1540",
       type: "image/jpg",
-      url: "/images/1.jpg",
+      url: "https://example-storage.com/images/1.jpg",
       filter: "costume",
     },
     {
       name: "Terno",
       preco: "2800",
       type: "image/jpg",
-      url: "/images/2.jpg",
+      url: "https://example-storage.com/images/2.jpg",
       filter: "terno",
     },
     {
